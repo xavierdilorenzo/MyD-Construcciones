@@ -11,7 +11,7 @@ if (isset($_POST['generar_pdf'])) {
 
     // Agregar el encabezado del documento
     $pdf->AddPage();
-    $pdf->Image('tu_logo.jpg', 10, 10, 30); // Agrega el logo en la parte superior
+    $pdf->Image('tu_logo.jpg', 170, 15, 30); // Agrega el logo en la parte superior
     $pdf->SetFont('dejavusans', 'B', 20);
     $pdf->Cell(0, 10, '________________________', 0, 1, 'C');
     $pdf->Cell(0, 10, 'Lista de Materiales', 0, 1, 'C');
