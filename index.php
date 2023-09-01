@@ -41,15 +41,29 @@
       margin-top: 20px;
     }
 
+    .button-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
     .material-button {
-      display: inline-block;
       margin: 5px;
-      padding: 10px 20px;
+      padding: 10px 0; /* Ajusta el relleno vertical */
+      width: 200px; /* Anchura fija para los botones */
       background-color: #f39c12;
-      color: #fff;
+      color: #000; /* Cambia el color del texto a negro */
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      text-decoration: none;
+      outline: none; /* Elimina el contorno de enfoque */
+    }
+
+    .material-button a {
+      color: #000; /* Cambia el color del enlace a negro */
+      text-decoration: none; /* Elimina la línea de subrayado del enlace */
     }
 
     /* Otros estilos... */
@@ -62,14 +76,23 @@
     </div>
     <h1>Generar PDF de Materiales</h1>
     <div class="button-container">
-      <button class="material-button"><a href="agua.php" >Agua</a></button>
-      <button class="material-button"><a href="agua.php" >Aire Acondicionado</a></button>
-      <button class="material-button"><a href="agua.php" >Gas</a></button>
-      <button class="material-button"><a href="agua.php" >Cloaca</a></button>
-      <button class="material-button"><a href="agua.php" >Pluviales</a></button>
-      <button class="material-button"><a href="agua.php" >Sistema De Riego</a></button>
-      <button class="material-button"><a href="agua.php" >Calefacción Por Radiadores</a></button>
-      <button class="material-button"><a href="agua.php" >Calefacción Por Pisos Radiantes</a></button>
+      <div class="button-row">
+        <button class="material-button"><a href="agua.php">Agua</a></button>
+        <button class="material-button"><a href="aire.php">Aire Acondicionado</a></button>
+      </div>
+      <div class="button-row">
+        <button class="material-button"><a href="agua.php">Gas</a></button>
+        <button class="material-button"><a href="agua.php">Cloaca</a></button>
+      </div>
+      <div class="button-row">
+        <button class="material-button"><a href="agua.php">Pluviales</a></button>
+        <button class="material-button"><a href="agua.php">Sistema De Riego</a></button>
+      </div>
+      <div class="button-row">
+        <button class="material-button"><a href="agua.php">Calefacción Por Radiadores</a></button>
+        <button class="material-button"><a href="agua.php">Calefacción Por Pisos Radiantes</a></button>
+      </div>
+      <button class="material-button"><a href="agua.php">Termotanques solares</a></button>
     </div>
   </div>
 </body>
